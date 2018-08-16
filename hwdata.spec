@@ -4,7 +4,7 @@ Version:	0.314
 Release:	1
 License:	GPLv2+
 URL:		https://github.com/vcrhonek/hwdata
-Source0:	https://github.com/vcrhonek/hwdata/archive/v%{version}.tar.gz
+Source0:	https://github.com/vcrhonek/hwdata/archive/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 Obsoletes:	ldetect-lst < 0.1.339
 Provides:	ldetect-lst = 0.1.339
