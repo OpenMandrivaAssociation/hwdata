@@ -1,7 +1,7 @@
 Summary:	Hardware identification and configuration data
 Name:		hwdata
 Version:	0.346
-Release:	1
+Release:	2
 License:	GPLv2+
 URL:		https://github.com/vcrhonek/hwdata
 Source0:	https://github.com/vcrhonek/hwdata/archive/%{name}-%{version}.tar.gz
@@ -21,10 +21,10 @@ such as the pci.ids and usb.ids databases.
 # nothing to build
 
 %install
-make install DESTDIR=%{buildroot} libdir=%{_prefix}/lib
+make install DESTDIR=%{buildroot} libdir=/lib
 
 %files
 %doc LICENSE COPYING
 %dir %{_datadir}/%{name}
-%{_prefix}/lib/modprobe.d/dist-blacklist.conf
+/lib/modprobe.d/dist-blacklist.conf
 %{_datadir}/%{name}/*
