@@ -1,6 +1,6 @@
 Summary:	Hardware identification and configuration data
 Name:		hwdata
-Version:	0.347
+Version:	0.348
 Release:	1
 License:	GPLv2+
 URL:		https://github.com/vcrhonek/hwdata
