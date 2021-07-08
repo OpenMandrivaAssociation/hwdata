@@ -1,10 +1,11 @@
 Summary:	Hardware identification and configuration data
 Name:		hwdata
-Version:	0.348
+Version:	0.349
 Release:	1
 License:	GPLv2+
 URL:		https://github.com/vcrhonek/hwdata
 Source0:	https://github.com/vcrhonek/hwdata/archive/%{name}-%{version}.tar.gz
+BuildRequires:	systemd-rpm-macros
 BuildArch:	noarch
 Obsoletes:	ldetect-lst < 0.1.339
 Provides:	ldetect-lst = 0.1.339
@@ -26,5 +27,5 @@ make install DESTDIR=%{buildroot} libdir=/lib
 %files
 %doc LICENSE COPYING
 %dir %{_datadir}/%{name}
-/lib/modprobe.d/dist-blacklist.conf
+%{_modprobedir}/dist-blacklist.conf
 %{_datadir}/%{name}/*
