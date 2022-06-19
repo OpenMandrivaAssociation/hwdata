@@ -22,7 +22,7 @@ such as the pci.ids and usb.ids databases.
 # nothing to build
 
 %install
-make install DESTDIR=%{buildroot} libdir=/lib
+make install DESTDIR=%{buildroot} libdir=%{_prefix}/lib
 
 %files
 %doc LICENSE COPYING
