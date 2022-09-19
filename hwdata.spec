@@ -1,6 +1,8 @@
+%global __requires_exclude pkg-config
+
 Summary:	Hardware identification and configuration data
 Name:		hwdata
-Version:	0.361
+Version:	0.362
 Release:	1
 License:	GPLv2+
 URL:		https://github.com/vcrhonek/hwdata
@@ -29,3 +31,4 @@ make install DESTDIR=%{buildroot} libdir=%{_prefix}/lib
 %dir %{_datadir}/%{name}
 %{_modprobedir}/dist-blacklist.conf
 %{_datadir}/%{name}/*
+%{_datadir}/pkgconfig/hwdata.pc
