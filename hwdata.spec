@@ -1,4 +1,5 @@
 %global __requires_exclude pkg-config
+%define _empty_manifest_terminate_build 0
 
 Summary:	Hardware identification and configuration data
 Name:		hwdata
