@@ -8,6 +8,11 @@ Release:	1
 License:	GPLv2+
 URL:		https://github.com/vcrhonek/hwdata
 Source0:	https://github.com/vcrhonek/hwdata/archive/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	systemd-rpm-macros
 BuildArch:	noarch
 Obsoletes:	ldetect-lst < 0.1.339
